@@ -42,3 +42,47 @@ aside.active {
     align-items: center;
     cursor: pointer;
 }
+.dot_1,.dot_2,.dot_2{
+    height: 10px;
+    width: 10px;
+    background: #F4645C;
+    border-radius: 50%;
+    transform: translateX(240px);
+    transition: 0.5s;
+}
+.dot_1{
+    background: #F4645C;
+    transition-delay: 0.2s;
+}
+.dot_2{
+    background: #FDBB32;
+    transition-delay: 0.4s;
+}
+.dot_3{
+    background: #39C349;
+    transition-delay: 0.6s;
+}
+.dots.active .dot_1,.dots.active .dot_2,.dots.active .dot_3 {
+    transform: translateX(8px);
+}
+.head_section {
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head_section img{
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+.head_section img::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background: black;
+}
