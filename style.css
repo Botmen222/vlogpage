@@ -32,3 +32,13 @@ aside{
     transition: 0.5s;
     transition-delay: 0.5s;
 }
+aside.active {
+    width: 80px;
+}
+.dots{
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
