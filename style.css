@@ -86,3 +86,93 @@ aside.active {
     width: 100px;
     background: black;
 }
+.head_section i::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 6px;
+    background: #FF6372;
+    border-radius: 50%;
+    border: 3px solid #F8E4D8;
+}
+.head_section::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #B6B6B6;
+    bottom: -20px;
+}
+.nav_links ul li{
+    padding: 10px 25px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.nav_links ul li:not(li:last-child){
+    margin-bottom: 22px;
+}
+.nav_links ul li a span{
+    color: #000;
+    font-size: 14px;
+}
+.nav_links ul li a i{
+    margin-right: 40px;
+    color: #A4A4A4;
+    transition: 0.5s;
+}
+.nav_links ul li:hover{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 5px 20px 0 #3782de42;
+}
+.nav_links ul li:hover{
+    color: #3781DE;
+}
+.head_section .search_bar{
+    position: relative;
+    height: 42px;
+    width: 180px;
+    margin: 0 22px;
+    background: transparent;
+    border: 1px solid #B6B6B6;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.head_section .search_bar input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 35px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+}
+.head_section .search_bar .search_icon{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    border: 2px solid #3781DE;
+    border-radius: 50%;
+}
+.head_section .search_bar .search_icon::after{
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    right: -2px;
+    width: 2px;
+    background: #3781DE;
+    transform: rotate(-45deg);
+}
+.head_section i{
+    position: relative;
+    font-size: 20px;
+    color: #A4A4A4;
+    cursor: pointer;
+}
