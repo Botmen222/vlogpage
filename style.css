@@ -185,11 +185,66 @@ aside.active {
     transform: translate(-50%, -50%);
     border: 5px solid #fcfcfc;
     padding: 10px;
-    width: 35%;
+    width: 27%;
+    height: 37%;
+    border-radius: 40px 25px;
 }
 
-.name{
+.name {
+    padding-top: 30px;
     width: 80%;
-    border: 3px solid blue;
-    margin: 200;
+    margin: auto;
+}
+
+.password {
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.submit {
+    padding-top: 22px;
+    width: 80%;
+    margin: auto;
+}
+
+.name_, .password_, .submit_{
+    width: 80%;
+    margin-left: 10%;
+    height: 30px;
+}
+
+.submit_{
+    height: 40px;
+    background: teal;
+    border-radius: 20px;
+    transition-duration: 0.8s;
+}
+
+.submit_:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.logo{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.logoimg{
+    border: none;
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.bottomlist{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.google{
+    width: 25px;
+    height: 25px;
 }

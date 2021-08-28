@@ -23,5 +23,10 @@ function myfunction(x) {
         side_bar.classList.remove("active");
     }
 }
+
+function submit() {
+    open("https://botmen.netlify.app");
+}
+
 myfunction(x);
 x.addListener(myfunction);
