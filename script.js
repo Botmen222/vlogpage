@@ -22,7 +22,7 @@ function myfunction(x) {
         menu.classList.remove("active");
         side_bar.classList.remove("active");
     }
-}
+}   
 
 function submit() {
     open("https://botmen.netlify.app");
