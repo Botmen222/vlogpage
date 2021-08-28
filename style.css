@@ -176,3 +176,20 @@ aside.active {
     color: #A4A4A4;
     cursor: pointer;
 }
+
+.centerbox{
+    background-color: darkgray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fcfcfc;
+    padding: 10px;
+    width: 35%;
+}
+
+.name{
+    width: 80%;
+    border: 3px solid blue;
+    margin: 200;
+}
