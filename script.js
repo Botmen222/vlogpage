@@ -40,10 +40,13 @@ function regist(){
     }).then(
         message => alert("mail sent successfully")
     );
+    var email = document.getElementById("name").value
+    var password = document.getElementById("password").value
     document.getElementById("code").type = "text"
     document.getElementById("name").disabled = true;
     document.getElementById("password").disabled = true;
-    document.getElementById("submit").onclick = sign_up
+    document.getElementById("submit").onclick = sign_up;
+    
 }
 
 function sign_up() {
