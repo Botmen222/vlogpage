@@ -202,13 +202,13 @@ aside.active {
     margin: auto;
 }
 
-.submit {
+.submit, .code {
     padding-top: 22px;
     width: 80%;
     margin: auto;
 }
 
-.name_, .password_, .submit_{
+.name_, .password_, .submit_, .code_{
     width: 80%;
     margin-left: 10%;
     height: 30px;
@@ -219,6 +219,8 @@ aside.active {
     background: teal;
     border-radius: 20px;
     transition-duration: 0.8s;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
 }
 
 .submit_:hover{
@@ -247,4 +249,39 @@ aside.active {
 .google{
     width: 25px;
     height: 25px;
+}
+
+.frgpsw{
+    border: 2px solid #030303;
+    width: 80%;
+}
+
+.lab1{
+    color: rgba(12, 11, 11, 0.753);
+    font: bold;
+    font-size: 9px;
+    margin-left: 30%;
+}
+
+.centerbox_{
+    background-color: darkgray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fcfcfc;
+    padding: 10px;
+    width: 27%;
+    height: 44%;
+    border-radius: 40px 25px;
+}
+
+.bottomlist_{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.name_:disabled, .password_:disabled{
+    background: darkgray;
 }

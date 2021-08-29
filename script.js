@@ -28,5 +28,27 @@ function submit() {
     open("https://botmen.netlify.app");
 }
 
+function regist(){
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username : "zomboribotond##@gmail.com",
+        Password : "###########",
+        To : 'zomboriboti####@gmail.com',
+        From : "zomboribotond##@gmail.com",
+        Subject : "Succes",
+        Body : "Hellloooooooo",
+    }).then(
+        message => alert("mail sent successfully")
+    );
+    document.getElementById("code").type = "text"
+    document.getElementById("name").disabled = true;
+    document.getElementById("password").disabled = true;
+    document.getElementById("submit").onclick = sign_up
+}
+
+function sign_up() {
+    console.log("hello")
+}
+
 myfunction(x);
 x.addListener(myfunction);

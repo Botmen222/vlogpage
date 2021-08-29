@@ -2,30 +2,31 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>login</title>
+    <title>sign up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="centerbox">
+    <div class="centerbox_">
         <div class="logo">
             <img src="logo.png" class="logoimg" width="150" height="80">
         </div>
         <div class="name">
-            <input id="name" class="name_" placeholder="email" type="text">
+            <input id="name" class="name_" placeholder="email" type="email">
         </div>
         <div class="password">
             <input id="password" class="password_" placeholder="password" type="password"> 
         </div>
-        <div class="submit">
-            <button class="submit_" onclick="submit()">LOG IN</button>
+        <div class="code">
+            <input id="code" class="code_" placeholder="6-digit code" type="hidden"> 
         </div>
-        <div class="bottomlist">
+        <div class="submit">
+            <button id="submit" class="submit_" onclick="regist()">SIGN UP</button>
+        </div>
+        <div class="bottomlist_">
             <img class="google" src="guglepng.png">
         </div>
-        <div class="frgtpsw">
-            <a href="#"><h6 class="lab1">Forgot password</h6></a>
-        </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
