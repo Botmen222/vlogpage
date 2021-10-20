@@ -1,3 +1,31 @@
+
+// Grab our credentials from a .env file or environment variables
+require('dotenv').config();
+const {
+	DATABASE_URL,
+	SUPABASE_SERVICE_API_KEY
+} = process.env;
+
+// Connect to our database 
+const { createClient } = require('@supabase/supabase-js');
+const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
+
+// Our standard serverless handler function
+exports.handler = async event => {
+
+  // Insert a row
+	const { data, error } = await supabase
+		.from('notes')
+ 		.insert([
+ 			{ note: 'I need to not forget this' },
+		]);
+
+  // Did it work?
+  console.log(data, error);
+  
+}
+
+
 const menu =document.querySelector(".dots");
 side_bar = document.querySelector("aside");
 let menuState = false;
@@ -28,6 +56,8 @@ function submit() {
     open("https://botmen.netlify.app");
 }
 
+
+
 function regist(){
     Email.send({
         Host: "smtp.gmail.com",
@@ -46,7 +76,6 @@ function regist(){
     document.getElementById("name").disabled = true;
     document.getElementById("password").disabled = true;
     document.getElementById("submit").onclick = sign_up;
-    
 }
 
 function sign_up() {
