@@ -34,10 +34,10 @@ function submit() {
 function regist(){
     Email.send({
         Host: "smtp.gmail.com",
-        Username : "zomboribotond##@gmail.com",
-        Password : "###########",
-        To : 'zomboriboti####@gmail.com',
-        From : "zomboribotond##@gmail.com",
+        Username : "zomborib2@gmail.com",
+        Password : "Barnabi2006",
+        To : 'zomboribotond22@gmail.com',
+        From : "zomborib2@gmail.com",
         Subject : "Succes",
         Body : "Hellloooooooo",
     }).then(
