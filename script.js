@@ -1,5 +1,4 @@
 
-
 const menu =document.querySelector(".dots");
 side_bar = document.querySelector("aside");
 let menuState = false;
