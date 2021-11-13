@@ -1,6 +1,6 @@
 
 // Grab our credentials from a .env file or environment variables
-require('dotenv').config();
+require('dotenvenv').config();
 const {
 	DATABASE_URL,
 	SUPABASE_SERVICE_API_KEY
@@ -21,6 +21,6 @@ exports.handler = async event => {
 		]);
 
   // Did it work?
-  console.log(data, error);
+  console.log(data, error, 'AaaAAaA');
   
 }
