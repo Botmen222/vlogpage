@@ -32,7 +32,7 @@ function submit() {
 
 
 function regist(){
-    Email.send({
+    email.send({
         Host: "smtp.gmail.com",
         Username : "zomborib2@gmail.com",
         Password : "Barnabi2006",
