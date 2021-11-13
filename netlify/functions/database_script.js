@@ -15,7 +15,7 @@ exports.handler = async event => {
 
   // Insert a row
 	const { data, error } = await supabase
-		.from('notes')
+		.from('profiles')
  		.insert([
  			{ note: 'I need to not forget this' },
 		]);
