@@ -7,11 +7,11 @@ const {
 } = process.env;
 
 // Connect to our database 
-const { createClient } = require('@supabase/supabase-js');
+import { createClient } from '@supabase/supabase-js';
 const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
 
 // Our standard serverless handler function
-exports.handler = async event => {
+export async function handler(event) {
 
   // Insert a row
 	const { data, error } = await supabase
