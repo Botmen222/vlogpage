@@ -1,6 +1,6 @@
 
 // Grab our credentials from a .env file or environment variables
-require('dotenv').config();
+require('.env').config();
 const {
 	DATABASE_URL,
 	SUPABASE_SERVICE_API_KEY
